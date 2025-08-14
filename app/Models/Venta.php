@@ -16,7 +16,6 @@ class Venta extends Model
         'total'
     ];
 
-    // Una venta tiene muchos detalles de venta
     public function detalles()
     {
         return $this->hasMany(DetalleVenta::class, 'id_venta');
